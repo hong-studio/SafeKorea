@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "875496709250",
+    "project_id": "safekorea-c0fa7",
+    "storage_bucket": "safekorea-c0fa7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875496709250:android:1e7fa54360435a020da89b",
+        "android_client_info": {
+          "package_name": "com.hong_studio.safekorea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875496709250-tsfjptlf1j7cc84m4b2mmkmat0bgfqdf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmhy2VtLdtnbPKM-w0lMboA5PgG9P8894"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875496709250-tsfjptlf1j7cc84m4b2mmkmat0bgfqdf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도시이름"
+            android:textSize="16sp"
+            android:textColor="#FF333333"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_data1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확진자 : "
+            android:textSize="12sp"
+            android:textColor="@color/black_mine"
+            android:layout_below="@id/tv_cityName"/>
+        <TextView
+            android:id="@+id/tv_cityTotalCase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30,879"
+            android:textSize="12sp"
+            android:textColor="@color/black_mine"
+            android:layout_toRightOf="@id/tv_data1"
+            android:layout_below="@id/tv_cityName"/>
+
+        <TextView
+            android:id="@+id/tv_data2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="완치자 : "
+            android:textSize="12sp"
+            android:textColor="@color/black_mine"
+            android:layout_below="@id/tv_cityTotalCase"/>
+        <TextView
+            android:id="@+id/tv_cityRecovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="28,466"
+            android:textSize="12sp"
+            android:textColor="@color/black_mine"
+            android:layout_toRightOf="@id/tv_data2"
+            android:layout_below="@id/tv_cityTotalCase"/>
+
+        <TextView
+            android:id="@+id/tv_data3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사망자 : "
+            android:textSize="12sp"
+            android:textColor="@color/black_mine"
+            android:layout_below="@id/tv_cityRecovered"/>
+        <TextView
+            android:id="@+id/tv_cityDeath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="415"
+            android:textSize="12sp"
+            android:textColor="@color/black_mine"
+            android:layout_toRightOf="@id/tv_data3"
+            android:layout_below="@id/tv_cityRecovered"/>
+
+        <TextView
+            android:id="@+id/tv_data4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="치료중 : "
+            android:textSize="12sp"
+            android:textColor="@color/black_mine"
+            android:layout_below="@id/tv_cityDeath"/>
+        <TextView
+            android:id="@+id/tv_cityRecovering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1998"
+            android:textSize="12sp"
+            android:textColor="@color/black_mine"
+            android:layout_toRightOf="@id/tv_data4"
+            android:layout_below="@id/tv_cityDeath"
+            android:layout_marginBottom="2dp"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

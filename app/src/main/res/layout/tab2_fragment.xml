@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@color/white"
+        app:title="백신접종센터"
+        android:background="@color/colorPrimary"/>
+
+    <RelativeLayout
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"/>
+
+    <ImageButton
+        android:id="@+id/btn_zoomIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_zoomin_24"
+        android:layout_above="@id/btn_zoomOut"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/white"
+        android:layout_marginRight="16dp"/>
+    <ImageButton
+        android:id="@+id/btn_zoomOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_zoomout_24"
+        android:layout_above="@id/info_container"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_facilityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaa"
+            android:textSize="16sp"
+            android:textColor="#FF0000FF"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_centerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaa"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaa"
+            android:textSize="16sp"
+            android:textColor="@color/black_mine"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
