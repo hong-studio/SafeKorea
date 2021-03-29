@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
                 //추후 이 토큰값을 dothome 서버에서 사용하고자 하기에 Log로 출력해보기
                 //그리고 화면에 보기 위해 Toast도 출력
-                Toast.makeText(MainActivity.this, ""+token, Toast.LENGTH_SHORT).show();
-                Log.i("TOKEN", token);
+//                Toast.makeText(MainActivity.this, ""+token, Toast.LENGTH_SHORT).show();
+//                Log.i("TOKEN", token);
 
                 //원래는 이 token 값을 웹서버(dothome 같은)에 전송하여
                 //회원정보를 DB에 저장하듯이 token값도 DB에 저장해 놓아야 함
