@@ -8,6 +8,7 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -102,8 +103,8 @@ public class Tab2Fragment extends Fragment implements MapView.POIItemEventListen
                         MapPOIItem marker = new MapPOIItem();
                         marker.setItemName(centers.data[i].facilityName);
                         marker.setTag(i);
-                        double lat = Double.parseDouble(centers.data[i].lng);
-                        double lng = Double.parseDouble(centers.data[i].lat);
+                        double lat = Double.parseDouble(centers.data[i].lat);
+                        double lng = Double.parseDouble(centers.data[i].lng);
                         MapPoint point = MapPoint.mapPointWithGeoCoord(lat, lng);
                         marker.setMapPoint(point);
                         marker.setMarkerType(MapPOIItem.MarkerType.BluePin);
@@ -135,8 +136,8 @@ public class Tab2Fragment extends Fragment implements MapView.POIItemEventListen
 
 //                    String markerName= mapPOIItem.getItemName();
                     int markerTag= mapPOIItem.getTag();
-                    double lat = Double.parseDouble(centers.data[markerTag].lng);
-                    double lng = Double.parseDouble(centers.data[markerTag].lat);
+                    double lat = Double.parseDouble(centers.data[markerTag].lat);
+                    double lng = Double.parseDouble(centers.data[markerTag].lng);
                     mapView.setMapCenterPointAndZoomLevel(MapPoint.mapPointWithGeoCoord(lat, lng), 2, true);
 
                     getActivity().runOnUiThread(new Runnable() {

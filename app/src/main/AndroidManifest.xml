@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.hong_studio.safekorea">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,7 +14,8 @@
         android:roundIcon="@mipmap/ic_main_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SafeKorea"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
         <activity android:name="com.hong_studio.safekorea.IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,12 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.hong_studio.safekorea.MainActivity"></activity>
+        <activity android:name="com.hong_studio.safekorea.MainActivity" />
 
         <!-- 카카오지도 구현 위한 앱키 추가 -->
         <meta-data
             android:name="com.kakao.sdk.AppKey"
-            android:value="7e8db1db386cd7bab7a682ca2b30dcd8" /> <!-- FCM 메세지 수신 서비스 등록 -->
+            android:value="7e8db1db386cd7bab7a682ca2b30dcd8" />
+        <!-- FCM 메세지 수신 서비스 등록 -->
         <service
             android:name="com.hong_studio.safekorea.MyFCMService"
             android:exported="false">

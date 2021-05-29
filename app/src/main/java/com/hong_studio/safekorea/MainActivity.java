@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -17,6 +18,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.hong_studio.safekorea.Tab1.Tab1Fragment;
 import com.hong_studio.safekorea.Tab2.Tab2Fragment;
+import com.kakao.util.maps.helper.Utility;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -61,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
         bnv= findViewById(R.id.bottom_navigation_view);
         bnv.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 FragmentTransaction tran= fragmentManager.beginTransaction();
